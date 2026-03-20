@@ -89,26 +89,26 @@ const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", 
 
 function doesWordExist(arrayOfWords, wordToSearch) {
 
-  let result = null
+  let result  = null
  
 
 for(let i = 0 ; i < arrayOfWords.length ; i++){
 
-
-  console.log(arrayOfWords[i] == wordToSearch )
-
-if( arrayOfWords.length != 0 && arrayOfWords[i] == wordToSearch){
-
-result = true
-break
-
-}else if ( arrayOfWords.length != 0 && arrayOfWords[i] != wordToSearch ){
-
-  result = false
- 
-}else if(arrayOfWords.length === 0){
+  
+if(!arrayOfWords ){
 
 result = null
+
+} else if( arrayOfWords  && arrayOfWords[i] == wordToSearch){
+
+result =true 
+break
+
+}else if ( arrayOfWords && arrayOfWords[i] != wordToSearch ){
+
+ result = false 
+
+ 
 }
 
 }
